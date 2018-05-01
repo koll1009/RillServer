@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package test;
+
+import "common.proto";
+
+service Test
+{
+	rpc Foo(TestMsg) returns (CommonMsg);
+}
+
+enum CmdType
+{
+    CMD_TYPE_UNKNOWN = 0;
+    CMD_TYPE_USER = 1;
+    CMD_TYPE_CHECK = 2;
+    CMD_TYPE_SKILL = 10;
+}
+
+message TestMsg
+{
+    int32 uid = 1;
+    int32 param = 2;
+    string name = 3;
+    repeated string names = 4;
+    CmdType cmd = 5;
+    CommonMsg common_msg = 6;
+    int32 n32 = 7;
+    double d = 8;
+    repeated int32 samples = 9 [packed=true];
+    map<string, CommonMsg> msgs = 10;
+    oneof test_oneof {
+        string name2 = 11;
+        CommonMsg msg2 = 12;
+    }
+    uint64 uint64f = 13;  // issue #10
+};

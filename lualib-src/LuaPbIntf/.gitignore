@@ -1,0 +1,52 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+/premake/.vs
+/premake/bin
+/premake/obj
+/premake/premake5.exe
+/premake/LuaPbIntf.sdf
+/premake/*.opendb
+/premake/*.db
+
+/third_party/lua
+/third_party/lua-intf
+/third_party/protobuf
+/test/*.bat
+/test/inspect.lua
+/test/*.exe
+/test/*.dll
+/test/lua
+
+*.pyc
+test_package/build
+
+/premake/vs20*
+/premake/gmake

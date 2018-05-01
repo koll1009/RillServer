@@ -1,0 +1,25 @@
+注册
+c->s
+{
+    "cmd":"register",
+    "account":"xxx",
+    "password":"xxx",
+}
+s->c
+{
+    "cmd":"register",
+    "ret":x, 
+}
+登录
+c->s
+{
+    "cmd":"login"
+    "account":"xxx",
+    "password":"xxx",
+}
+s->c
+{
+    "cmd":"login",
+    "ret":x,
+}
+

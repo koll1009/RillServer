@@ -1,0 +1,8 @@
+*.o
+*.a
+/cservice
+/luaclib
+*.so
+*.dSYM
+.DS_Store
+*.idea

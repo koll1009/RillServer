@@ -1,0 +1,13 @@
+
+[submodule "lualib-src/LuaPbIntf"]
+	path = lualib-src/LuaPbIntf
+	url = https://github.com/jinq0123/LuaPbIntf.git
+[submodule "lualib-src/lua-cjson"]
+	path = lualib-src/lua-cjson
+	url = https://github.com/mpx/lua-cjson.git
+[submodule "lualib-src/luafilesystem"]
+	path = lualib-src/luafilesystem
+	url = https://github.com/keplerproject/luafilesystem.git
+[submodule "skynet"]
+	path = skynet
+	url = https://github.com/cloudwu/skynet.git

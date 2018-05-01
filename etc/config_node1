@@ -1,0 +1,12 @@
+
+include("config_public")
+
+start = "main_node"
+
+nodename = "node1"
+
+
+if $DAEMON then
+	daemon = app_root.."run/skynet.pid"
+	logger = "userlog"
+end

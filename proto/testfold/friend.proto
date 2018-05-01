@@ -1,0 +1,11 @@
+syntax = "proto3";
+package friend ;
+
+message Ask 	
+{ 
+    int32 uid = 1;
+}
+
+message Answer 	{  //回答
+    int32 uid = 1;
+}

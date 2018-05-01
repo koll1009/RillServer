@@ -1,0 +1,45 @@
+app_root = "$ROOT/"
+skynet_root = "$SKYNET_ROOT/" 
+
+logpath = app_root.."log/"
+log_level = "debug"
+
+thread = 4
+harbor = 0
+bootstrap = "snlua bootstrap"
+
+runconfig = "runconfig"
+
+lualoader	= skynet_root.."lualib/loader.lua"
+preload    = app_root.."preload/preload.lua"
+
+cpath		= app_root.."cservice/?.so;"..skynet_root.."cservice/?.so;"
+luaservice	= app_root.."service/?.lua;"..
+              app_root.."service/reserve/?.lua;" ..
+              app_root.."service/room/?.lua;" ..
+              
+              skynet_root.."service/?.lua;"
+
+lua_path	= app_root.."etc/?.lua;" ..
+            app_root.."lualib/?.lua;" ..
+            app_root.."config/?.lua;" ..
+            app_root.."mod/?.lua;".. 
+            app_root.."preload/?.lua;"..
+            app_root.."mod/reserve/?.lua;"..
+            app_root.."mod/room/?.lua;"..
+
+            skynet_root.."lualib/?.lua;" ..
+            skynet_root.."lualib/compat10/?.lua;" ..
+            skynet_root.."lualib/?/init.lua;"
+
+lua_cpath	= app_root.."luaclib/?.so;" ..
+              skynet_root.."luaclib/?.so;"
+
+--[[
+if $DAEMON then
+	daemon = app_root.."run/skynet.pid"
+	logger = "userlog"
+end
+]]
+
+
